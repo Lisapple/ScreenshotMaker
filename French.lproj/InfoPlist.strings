@@ -1,0 +1,24 @@
+﻿/* Localized versions of Info.plist keys */
+
+AMName = "Créer une animation";
+
+/*  AMApplication localized strings  */
+/*  e.g. "TextEdit" = "TextEdit";  */
+
+/*  AMCategory localized strings  */
+/*  e.g. "Text" = "Text";  */
+
+/*  AMDefaultParameters localized values  */
+/*  e.g. myDefaultIntegerParameter = 0;  */
+/*  e.g. myDefaultStringParameter = "Default String Value";  */
+
+/*  AMDescription localized strings  */
+AMDInput = "Images de type BMP (.bmp), GIF (.gif), JPEG (.jpg ou .jpeg), JPEG 2000 (.jp2), PICT (.pct ou .pict), PNG (.png) ou TIFF (.tif ou .tiff).";
+AMDNote = "Renvoie le chemin vers le file d'export si l'option d'export est séléctionnée ou sinon un film au format QuickTime.";
+AMDOptions = "Régler la vitesse avec le curseur.";
+AMDResult = "Le chemin vers le fichier d'export ou un film au format QuickTime.";
+AMDSummary = "Cette action crée un film au format QuickTime avec les images en entrée.";
+AMDWebsite = "http://lisapple.free.fr/motion/";
+
+/*  AMKeyword localized strings  */
+/*  e.g. "Filter" = "Filter";  */
