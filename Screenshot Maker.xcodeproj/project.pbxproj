@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAppleScriptBuildPhase section */
+		508BA02D12CFAE2400AE204B /* AppleScript */ = {
+			isa = PBXAppleScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isSharedContext = 0;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXAppleScriptBuildPhase section */
+
+/* Begin PBXBuildFile section */
+		5051FBF112D11F5A005975BF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5051FBF012D11F5A005975BF /* icon.png */; };
+		508BA03712CFAE2400AE204B /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508BA03612CFAE2400AE204B /* Automator.framework */; };
+		508BA03912CFAE2400AE204B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508BA03812CFAE2400AE204B /* Cocoa.framework */; };
+		508BA03E12CFAE2500AE204B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 508BA03C12CFAE2500AE204B /* InfoPlist.strings */; };
+		508BA04112CFAE2500AE204B /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 508BA03F12CFAE2500AE204B /* main.xib */; };
+		508BA04312CFAE2500AE204B /* Screenshot_Maker.h in Resources */ = {isa = PBXBuildFile; fileRef = 508BA04212CFAE2500AE204B /* Screenshot_Maker.h */; };
+		508BA04512CFAE2500AE204B /* Screenshot_Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = 508BA04412CFAE2500AE204B /* Screenshot_Maker.m */; };
+		508BA04E12CFB4C900AE204B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508BA04D12CFB4C900AE204B /* QuartzCore.framework */; };
+		508BA05012CFBCB600AE204B /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508BA04F12CFBCB600AE204B /* OSAKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5051FBF012D11F5A005975BF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		508BA03412CFAE2400AE204B /* Screenshot Maker.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Screenshot Maker.action"; sourceTree = BUILT_PRODUCTS_DIR; };
+		508BA03612CFAE2400AE204B /* Automator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Automator.framework; path = System/Library/Frameworks/Automator.framework; sourceTree = SDKROOT; };
+		508BA03812CFAE2400AE204B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		508BA03A12CFAE2500AE204B /* Screenshot_Maker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Screenshot_Maker-Info.plist"; sourceTree = "<group>"; };
+		508BA03B12CFAE2500AE204B /* Screenshot_Maker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Screenshot_Maker-Prefix.pch"; sourceTree = "<group>"; };
+		508BA03D12CFAE2500AE204B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		508BA04012CFAE2500AE204B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/main.xib; sourceTree = "<group>"; };
+		508BA04212CFAE2500AE204B /* Screenshot_Maker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Screenshot_Maker.h; sourceTree = "<group>"; };
+		508BA04412CFAE2500AE204B /* Screenshot_Maker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Screenshot_Maker.m; sourceTree = "<group>"; };
+		508BA04D12CFB4C900AE204B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Xcode4/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		508BA04F12CFBCB600AE204B /* OSAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSAKit.framework; path = Xcode4/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/OSAKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		508BA02F12CFAE2400AE204B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508BA05012CFBCB600AE204B /* OSAKit.framework in Frameworks */,
+				508BA04E12CFB4C900AE204B /* QuartzCore.framework in Frameworks */,
+				508BA03712CFAE2400AE204B /* Automator.framework in Frameworks */,
+				508BA03912CFAE2400AE204B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		508BA02212CFAE2400AE204B = {
+			isa = PBXGroup;
+			children = (
+				508BA02912CFAE2400AE204B /* Classes */,
+				508BA02A12CFAE2400AE204B /* Other Sources */,
+				508BA02B12CFAE2400AE204B /* Resources */,
+				508BA02C12CFAE2400AE204B /* Frameworks */,
+				508BA03512CFAE2400AE204B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		508BA02912CFAE2400AE204B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				508BA04212CFAE2500AE204B /* Screenshot_Maker.h */,
+				508BA04412CFAE2500AE204B /* Screenshot_Maker.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		508BA02A12CFAE2400AE204B /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				508BA03B12CFAE2500AE204B /* Screenshot_Maker-Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		508BA02B12CFAE2400AE204B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				508BA03A12CFAE2500AE204B /* Screenshot_Maker-Info.plist */,
+				508BA03C12CFAE2500AE204B /* InfoPlist.strings */,
+				508BA03F12CFAE2500AE204B /* main.xib */,
+				5051FBF012D11F5A005975BF /* icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		508BA02C12CFAE2400AE204B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				508BA04F12CFBCB600AE204B /* OSAKit.framework */,
+				508BA04D12CFB4C900AE204B /* QuartzCore.framework */,
+				508BA03612CFAE2400AE204B /* Automator.framework */,
+				508BA03812CFAE2400AE204B /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		508BA03512CFAE2400AE204B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				508BA03412CFAE2400AE204B /* Screenshot Maker.action */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		508BA03312CFAE2400AE204B /* Screenshot Maker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 508BA04812CFAE2500AE204B /* Build configuration list for PBXNativeTarget "Screenshot Maker" */;
+			buildPhases = (
+				508BA02D12CFAE2400AE204B /* AppleScript */,
+				508BA02E12CFAE2400AE204B /* Sources */,
+				508BA02F12CFAE2400AE204B /* Frameworks */,
+				508BA03012CFAE2400AE204B /* Resources */,
+				508BA03112CFAE2400AE204B /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Screenshot Maker";
+			productName = "Screenshot Maker";
+			productReference = 508BA03412CFAE2400AE204B /* Screenshot Maker.action */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		508BA02412CFAE2400AE204B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Lisacintosh;
+			};
+			buildConfigurationList = 508BA02712CFAE2400AE204B /* Build configuration list for PBXProject "Screenshot Maker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				fr,
+				French,
+			);
+			mainGroup = 508BA02212CFAE2400AE204B;
+			productRefGroup = 508BA03512CFAE2400AE204B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				508BA03312CFAE2400AE204B /* Screenshot Maker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		508BA03012CFAE2400AE204B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508BA03E12CFAE2500AE204B /* InfoPlist.strings in Resources */,
+				508BA04112CFAE2500AE204B /* main.xib in Resources */,
+				508BA04312CFAE2500AE204B /* Screenshot_Maker.h in Resources */,
+				5051FBF112D11F5A005975BF /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		508BA03112CFAE2400AE204B /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		508BA02E12CFAE2400AE204B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508BA04512CFAE2500AE204B /* Screenshot_Maker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		508BA03C12CFAE2500AE204B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				508BA03D12CFAE2500AE204B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		508BA03F12CFAE2500AE204B /* main.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				508BA04012CFAE2500AE204B /* en */,
+			);
+			name = main.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		508BA04612CFAE2500AE204B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		508BA04712CFAE2500AE204B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+		508BA04912CFAE2500AE204B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Screenshot_Maker-Prefix.pch";
+				INFOPLIST_FILE = "Screenshot_Maker-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
+				WRAPPER_EXTENSION = action;
+			};
+			name = Debug;
+		};
+		508BA04A12CFAE2500AE204B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Screenshot_Maker-Prefix.pch";
+				INFOPLIST_FILE = "Screenshot_Maker-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 ppc x86_64";
+				WRAPPER_EXTENSION = action;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		508BA02712CFAE2400AE204B /* Build configuration list for PBXProject "Screenshot Maker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508BA04612CFAE2500AE204B /* Debug */,
+				508BA04712CFAE2500AE204B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		508BA04812CFAE2500AE204B /* Build configuration list for PBXNativeTarget "Screenshot Maker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508BA04912CFAE2500AE204B /* Debug */,
+				508BA04A12CFAE2500AE204B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 508BA02412CFAE2400AE204B /* Project object */;
+}

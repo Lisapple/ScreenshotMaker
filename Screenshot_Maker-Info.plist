@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.path</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>Automator</string>
+	<key>AMCanShowSelectedItemsWhenRun</key>
+	<false/>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<string>AMCategoryDeveloper</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>interlaced</key>
+		<true/>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDInput</key>
+		<string>PNG image files (.png)</string>
+		<key>AMDNote</key>
+		<string>Rotate all landscape files before applying crop.</string>
+		<key>AMDOptions</key>
+		<string>Selected interlaced option provides interlaced PNG image files (recommanded).</string>
+		<key>AMDResult</key>
+		<string>PNG image files (.png)</string>
+		<key>AMDSummary</key>
+		<string>This action crop iPhone, iPod touch and iPad screenshot to delete status bar (recommended when submitting an app on App Store). Compatible with Retina Dislay screenshot.</string>
+		<key>AMDWebsite</key>
+		<string>http://lisapple.free.fr/screenshotMaker/</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>icon.png</string>
+	<key>AMKeywords</key>
+	<array/>
+	<key>AMName</key>
+	<string>Screenshot Maker</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.path</string>
+		</array>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array/>
+	<key>AMWarning</key>
+	<dict>
+		<key>Action</key>
+		<string>(* Action name to be suggested to add prior to this action to make the task safer, e.g. com.apple.Automator.CopyFiles, goes here. *)</string>
+		<key>ApplyButton</key>
+		<string>(* Button label for user to add proposed Action, e.g. Add. *)</string>
+		<key>IgnoreButton</key>
+		<string>(* Button label for user not to add proposed Action, e.g. Don&apos;t Add. *)</string>
+		<key>Level</key>
+		<integer>0</integer>
+		<key>Message</key>
+		<string>(* Warning message presented to user goes here. *)</string>
+	</dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string>icon.png</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.lisacintosh.Automator.${PRODUCT_NAME:rfc1034identifier}</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.3</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.3</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2011 Lis@cintosh. All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>Screenshot_Maker</string>
+</dict>
+</plist>
