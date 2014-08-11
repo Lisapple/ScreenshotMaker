@@ -7,55 +7,52 @@
 		<key>Container</key>
 		<string>List</string>
 		<key>Optional</key>
-		<true/>
+		<false/>
 		<key>Types</key>
 		<array>
-			<string>public.image</string>
+			<string>com.apple.cocoa.path</string>
 		</array>
 	</dict>
 	<key>AMApplication</key>
-	<string>(* Primary Application used by this action goes here. *)</string>
+	<string>Automator</string>
 	<key>AMCanShowSelectedItemsWhenRun</key>
 	<false/>
 	<key>AMCanShowWhenRun</key>
 	<true/>
 	<key>AMCategory</key>
-	<string>AMCategoryMovies</string>
+	<string>AMCategoryDeveloper</string>
 	<key>AMDefaultParameters</key>
 	<dict>
-		<key>duration</key>
-		<real>1</real>
-		<key>path</key>
-		<string>/</string>
-		<key>save</key>
+		<key>interlaced</key>
 		<true/>
 	</dict>
 	<key>AMDescription</key>
 	<dict>
 		<key>AMDInput</key>
-		<string>Image files</string>
+		<string>PNG image files (.png)</string>
+		<key>AMDNote</key>
+		<string>Rotate all landscape files before applying crop.</string>
 		<key>AMDOptions</key>
-		<string>Set the speed level with the slider.</string>
+		<string>Selected interlaced option provides interlaced PNG image files (recommanded).</string>
 		<key>AMDResult</key>
-		<string></string>
+		<string>PNG image files (.png)</string>
 		<key>AMDSummary</key>
-		<string>This action create a QuickTime movie with all input images.</string>
+		<string>This action crop iPhone, iPod touch and iPad screenshot to delete status bar (recommended when submitting an app on App Store). Compatible with Retina Dislay screenshot.</string>
 		<key>AMDWebsite</key>
-		<string>lisapple.free.fr/Motion.html</string>
+		<string>http://lisapple.free.fr/screenshotMaker/</string>
 	</dict>
 	<key>AMIconName</key>
-	<string>Icon.png</string>
+	<string>icon.png</string>
 	<key>AMKeywords</key>
 	<array/>
 	<key>AMName</key>
-	<string>Motion</string>
+	<string>Screenshot Maker</string>
 	<key>AMProvides</key>
 	<dict>
 		<key>Container</key>
 		<string>List</string>
 		<key>Types</key>
 		<array>
-			<string>com.apple.quicktime-movie</string>
 			<string>com.apple.cocoa.path</string>
 		</array>
 	</dict>
@@ -77,17 +74,15 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>Motion</string>
-	<key>CFBundleGetInfoString</key>
-	<string>Copyright © 2010 Lis@cintosh, All Rights Reserved</string>
+	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>Icon.png</string>
+	<string>icon.png</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.lisacintosh.Automator.Motion</string>
+	<string>com.lisacintosh.Automator.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Motion Stop!</string>
+	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
@@ -97,8 +92,8 @@
 	<key>CFBundleVersion</key>
 	<string>0.3</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2010 Lis@cintosh, All Rights Reserved.</string>
+	<string>Copyright © 2011 Lis@cintosh. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>Motion</string>
+	<string>Screenshot_Maker</string>
 </dict>
 </plist>
