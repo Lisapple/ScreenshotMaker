@@ -17,18 +17,6 @@
 
 - (id)runWithInput:(id)input fromAction:(AMAction *)anAction error:(NSDictionary **)errorInfo
 {
-	/*
-	 NSArray * objsArray = [NSArray arrayWithObjects:
-	 [NSNumber numberWithInt:errOSASystemError],
-	 @"ERROR !!!\n", nil];
-	 
-	 NSArray * keysArray = [NSArray arrayWithObjects:OSAScriptErrorNumber, OSAScriptErrorMessage, nil];
-	 
-	 *errorInfo = [NSDictionary dictionaryWithObjects:objsArray
-	 forKeys:keysArray];
-	 return nil;
-	 */
-	
 	errorInfoDictionary = errorInfo;
 	[self performSelectorOnMainThread:@selector(cropImagesFromAction:) withObject:input waitUntilDone:YES];
 	
@@ -48,12 +36,15 @@
 	 - portrait: from 640x960 to 640x920
 	 - landscape: from 960x640 to 960x600
 	 
-	 iPad:
+	 // @TODO: Add iPhone 5
 	 
-	 768, 1024
+	 iPad:
 	 - portrait: from 768x1024 to 768x1004
 	 - landscape: from 1024x768 to 1024x748
 	 
+	 iPad Retina:
+	 - portrait: from 1536x2048 to 1536x2008
+	 - landscape: from 2048x1536 to 2048x1496
 	 
 	 /!\ in Mac OS X, (0, 0) is the corner down-left
 	 */
@@ -79,9 +70,9 @@
 		else if (size.width == 1024. && size.height == 768.)// iPad landscape
 			rect = CGRectMake(0., 0., 1024., 748.);
 		/* Maybe for an Retina iPad!!! */
-		else if (size.width == 1536. && size.height == 2048.)// iPad (Retina Display???) portait
+		else if (size.width == 1536. && size.height == 2048.)// iPad (Retina Display) portait
 			rect = CGRectMake(0., 0., 1536., 2008.);
-		else if (size.width == 2048. && size.height == 1536.)// iPad (Retina Display???) landscape
+		else if (size.width == 2048. && size.height == 1536.)// iPad (Retina Display) landscape
 			rect = CGRectMake(0., 0., 2048., 1496.);
 		
 		if (!CGRectIsNull(rect)) {//If size has not be correct, ignore the conversion and go to next image

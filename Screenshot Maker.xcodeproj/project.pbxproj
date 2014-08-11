@@ -145,6 +145,7 @@
 		508BA02412CFAE2400AE204B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Lisacintosh;
 			};
 			buildConfigurationList = 508BA02712CFAE2400AE204B /* Build configuration list for PBXProject "Screenshot Maker" */;
