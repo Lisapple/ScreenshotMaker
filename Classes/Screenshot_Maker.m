@@ -37,6 +37,8 @@
 	 - landscape: from 960x640 to 960x600
 	 
 	 // @TODO: Add iPhone 5
+	 - portrait: from 640x1136 to 640x1196
+	 - landscape: from 1136x640 to 1136x600
 	 
 	 iPad:
 	 - portrait: from 768x1024 to 768x1004
@@ -57,19 +59,26 @@
 		[imageRep release];
 		
 		CGRect rect = CGRectNull;
-		if (size.width == 320. && size.height == 480.)// iPhone portait
+		/**/ if (size.width == 320. && size.height == 480.)// iPhone portait
 			rect = CGRectMake(0., 0., 320., 460.);
 		else if (size.width == 480. && size.height == 320.)// iPhone landscape
 			rect = CGRectMake(0., 0., 480., 300.);
+		
 		else if (size.width == 640. && size.height == 960.)// iPhone 4 portait
 			rect = CGRectMake(0., 0., 640., 920.);
 		else if (size.width == 960. && size.height == 640.)// iPhone 4 landscape
 			rect = CGRectMake(0., 0., 960., 600.);
+		
+		else if (size.width == 640. && size.height == 1136.)// iPhone 5+ portait
+			rect = CGRectMake(0., 0., 640., 1196.);
+		else if (size.width == 1136. && size.height == 640.)// iPhone 5+ landscape
+			rect = CGRectMake(0., 0., 1136., 600.);
+		
 		else if (size.width == 768. && size.height == 1024.)// iPad portait
 			rect = CGRectMake(0., 0., 768., 1004.);
 		else if (size.width == 1024. && size.height == 768.)// iPad landscape
 			rect = CGRectMake(0., 0., 1024., 748.);
-		/* Maybe for an Retina iPad!!! */
+		
 		else if (size.width == 1536. && size.height == 2048.)// iPad (Retina Display) portait
 			rect = CGRectMake(0., 0., 1536., 2008.);
 		else if (size.width == 2048. && size.height == 1536.)// iPad (Retina Display) landscape
