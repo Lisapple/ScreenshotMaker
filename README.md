@@ -1,8 +1,7 @@
-ScreenshotMaker
-===============
+Motion
+======
 
-An Automator plug-in to crop status bar from iOS screenshot
-
+An Automator plug-in to create stop motion movies from images
 
 #### Installation
 
